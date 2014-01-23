@@ -1,0 +1,492 @@
+@import "mixins";
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#login-modal {
+    @include border-radius(3px);
+    @include box-shadow(2px, 15px, 15px, rgba(0, 0, 0, 0.3));
+	float: left;
+    width: 360px;
+    height: auto;
+    padding: 10px;
+    background-color: #f6f6f6;
+    p.headline {
+        @include modal-p;
+        font-size: 18px;
+    }
+    .user-type {
+        float: left;
+        width: 360px;
+        height: 200px;
+        margin:15px 0 0 0;
+        @include open-sans-light;
+        .landlord, .client {
+            @include border-radius(2px 0 0 2px);
+            background-color:$landlord-bg;
+            float: left;
+            width: 180px;
+            height: 160px;
+            &:hover {
+                -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
+                -moz-box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
+                box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
+            }
+        }
+        .client {
+            @include border-radius(0 2px 2px 0);
+            background-color:$client-bg;
+            float: right;
+        }
+        .icon {
+            width: 180px;
+            height: 90px;
+            padding: 20px 0 0 0;
+            text-align: center;
+        }
+        .account-type {
+            color: $white;
+            width: 180px;
+            text-align: center;
+            font-variant: small-caps;
+            font-size: 20px;
+            text-shadow: 1px 1.732px 3px rgba(0,0,0,0.2);
+        }
+        p.info {
+            @include open-sans-regular;
+            color:$blue;
+            float: left;
+            clear: both;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            padding:15px 0 0 0;
+            margin:0;
+        }
+    }
+    #fb-login {
+        @include open-sans-light;
+        float:left;
+        width:280px;
+        padding:0 40px;
+        margin:15px 0 0 0;
+        .fb-login {
+            float:left;
+        }
+        .fb-btn {
+            color: $white;
+            display: inline;
+            float: left;
+            width: 260px;
+            height: 50px;
+            padding:0 20px 0 0;
+            background:$facebook-blue url('../img/  fb-login-icon.png') no-repeat left top;
+            font-size: 18px;
+            text-shadow: 1px 1.732px 1px rgba(0,0,0,0.2);
+            line-height: 50px;
+            text-align: right;
+            &:hover {
+               -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
+               -moz-box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
+               box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15); 
+            }
+            .small {
+                display: inline;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+#client-account {
+    @include open-sans-light;
+    float: left;
+    width: 360px;
+    margin:15px 0 0 0;
+    .client-login {
+        float:left;
+        .headline {
+            @include modal-p;
+        }
+        form.login {
+            float:left;
+            margin:15px 0 0 0;
+            input#email, input#password {
+                @include input;
+                @include placeholder {
+                    @include placeholder-style;
+                  }
+            }
+            ul {
+                color:$gray;
+                float: left;
+                height: 40px;
+                padding: 0;
+                margin: 0;
+                font-size: 12px;
+                text-shadow: 1.5px 2.598px 4px rgba(255,255,255, 0.3);
+                li {
+                    list-style-type: none;
+                    line-height:20px;
+                    text-shadow:1.5px 2.598px 4px rgba(255,255,255, 0.3 );
+                    color:#8b8b8b;
+                    &:link {
+                        color:$gray;
+                    }
+                    &:hover {
+                        text-decoration:underline;
+                    }
+                }
+            }
+            #btn-login {
+                @include green-btn;
+                float: right;
+                width:115px;
+            }
+        }
+    }
+    .client-registration {
+        float:left;
+        margin:15px 0 0 0;
+        p.headline {
+            @include modal-p;
+        }
+        form.registration {
+            float: left;
+            margin:15px 0 0 0;
+            .element {
+                float:left;
+                width:360px;
+                input#name, input#mail, input#pass, input#re-pass {
+                    @include input;
+                    @include placeholder {
+                        @include placeholder-style;
+                      }
+                }
+            }   
+            ul {
+                margin:0;
+                padding:0;
+                li {
+                    list-style-type:none;
+                    @include modal-p;
+                    input[type="checkbox"] {
+                        margin:0 10px 0 0;
+                    }
+                    a:link {
+                        color:$gray !important;
+                        text-decoration: none;
+                        font-size:12px;
+                    }
+                    a:hover {
+                        text-decoration:underline;
+                    }
+                }
+            }
+            button#register {
+                @include green-btn;
+                float: left;
+                width: 360px;
+                margin:15px 0 0 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+.registration-sucess, .new-password-sucess {
+    float: left;
+    p {
+        @include modal-p;
+        color:$green-bg     ;
+        font-size: 14px;
+        line-height: 21px;
+        text-align:center;
+        margin:15px 0 0 0;
+    }
+}
+
+.lost-password {
+    float: left;
+    margin:15px 0 0 0;
+    p {
+        @include modal-p;
+    }
+    form.recover-password {
+        float:left;
+        width:360px;
+        margin:15px 0 0 0;
+        input#e-mail {
+            @include input;
+            @include placeholder {
+                @include placeholder-style;
+              }
+        }
+        button#send-password {
+            float: left;
+            width: 360px;
+            @include green-btn;
+        }
+    }
+}
+
+#landlord-account {
+    float:left; 
+    margin:15px 0 0 0;
+    p {
+        @include modal-p;
+    }
+    form.login {
+        float: left;
+        width:360px;
+        margin:15px 0 0 0;
+        input#landlord-email, input#landlord-password {
+            @include input;
+            @include placeholder {
+                @include placeholder-style;
+              }
+        }
+        ul {
+            float: left;
+            height: 40px;
+            @include modal-p;
+            li {
+                list-style-type: none;
+                &:link {
+                    color:$gray;
+                }
+                &:hover {
+                    text-decoration:underline;
+                }
+                &:visited {
+                    text-decoration: underline;
+                }
+            }
+        }
+        button#btn-login {
+            float: right;
+            @include green-btn;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

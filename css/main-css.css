@@ -1,0 +1,713 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#login-modal {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.3);
+  float: left;
+  width: 360px;
+  height: auto;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+#login-modal p.headline {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+#login-modal .user-type {
+  float: left;
+  width: 360px;
+  height: 200px;
+  margin: 15px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#login-modal .user-type .landlord, #login-modal .user-type .client {
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  -ms-border-radius: 2px 0 0 2px;
+  -o-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  background-color: #3498db;
+  float: left;
+  width: 180px;
+  height: 160px;
+}
+#login-modal .user-type .landlord:hover, #login-modal .user-type .client:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+#login-modal .user-type .client {
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -ms-border-radius: 0 2px 2px 0;
+  -o-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  background-color: #52be7f;
+  float: right;
+}
+#login-modal .user-type .icon {
+  width: 180px;
+  height: 90px;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+#login-modal .user-type .account-type {
+  color: white;
+  width: 180px;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-shadow: 1px 1.732px 3px rgba(0, 0, 0, 0.2);
+}
+#login-modal .user-type p.info {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #5fa7f0;
+  float: left;
+  clear: both;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+#login-modal #fb-login {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  float: left;
+  width: 280px;
+  padding: 0 40px;
+  margin: 15px 0 0 0;
+}
+#login-modal #fb-login .fb-login {
+  float: left;
+}
+#login-modal #fb-login .fb-btn {
+  color: white;
+  display: inline;
+  float: left;
+  width: 260px;
+  height: 50px;
+  padding: 0 20px 0 0;
+  background: #5d9cec url("../img/  fb-login-icon.png") no-repeat left top;
+  font-size: 18px;
+  text-shadow: 1px 1.732px 1px rgba(0, 0, 0, 0.2);
+  line-height: 50px;
+  text-align: right;
+}
+#login-modal #fb-login .fb-btn:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+#login-modal #fb-login .fb-btn .small {
+  display: inline;
+  font-size: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#client-account {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+#client-account .client-login {
+  float: left;
+}
+#client-account .client-login .headline {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#client-account .client-login form.login {
+  float: left;
+  margin: 15px 0 0 0;
+}
+#client-account .client-login form.login input#email, #client-account .client-login form.login input#password {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  float: left;
+  width: 348px;
+  height: 35px;
+  border: 1px solid #d7d8dd;
+  padding: 0 0 0 10px;
+  margin: 0 0 15px 0;
+  color: #8b8b8b;
+}
+#client-account .client-login form.login input#email:focus, #client-account .client-login form.login input#password:focus {
+  outline: 0;
+}
+#client-account .client-login form.login input#email::-moz-placeholder, #client-account .client-login form.login input#password::-moz-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-login form.login input#email::-webkit-input-placeholder, #client-account .client-login form.login input#password::-webkit-input-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-login form.login input#email:-ms-input-placeholder, #client-account .client-login form.login input#password:-ms-input-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-login form.login ul {
+  color: #8b8b8b;
+  float: left;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+}
+#client-account .client-login form.login ul li {
+  list-style-type: none;
+  line-height: 20px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  color: #8b8b8b;
+}
+#client-account .client-login form.login ul li:link {
+  color: #8b8b8b;
+}
+#client-account .client-login form.login ul li:hover {
+  text-decoration: underline;
+}
+#client-account .client-login form.login #btn-login {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white !important;
+  background-color: #a0d468;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  height: 35px;
+  font-size: 16px;
+  font-variant: small-caps;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  line-height: 31px;
+  float: right;
+  width: 115px;
+}
+#client-account .client-login form.login #btn-login:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+#client-account .client-registration {
+  float: left;
+  margin: 15px 0 0 0;
+}
+#client-account .client-registration p.headline {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#client-account .client-registration form.registration {
+  float: left;
+  margin: 15px 0 0 0;
+}
+#client-account .client-registration form.registration .element {
+  float: left;
+  width: 360px;
+}
+#client-account .client-registration form.registration .element input#name, #client-account .client-registration form.registration .element input#mail, #client-account .client-registration form.registration .element input#pass, #client-account .client-registration form.registration .element input#re-pass {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  float: left;
+  width: 348px;
+  height: 35px;
+  border: 1px solid #d7d8dd;
+  padding: 0 0 0 10px;
+  margin: 0 0 15px 0;
+  color: #8b8b8b;
+}
+#client-account .client-registration form.registration .element input#name:focus, #client-account .client-registration form.registration .element input#mail:focus, #client-account .client-registration form.registration .element input#pass:focus, #client-account .client-registration form.registration .element input#re-pass:focus {
+  outline: 0;
+}
+#client-account .client-registration form.registration .element input#name::-moz-placeholder, #client-account .client-registration form.registration .element input#mail::-moz-placeholder, #client-account .client-registration form.registration .element input#pass::-moz-placeholder, #client-account .client-registration form.registration .element input#re-pass::-moz-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-registration form.registration .element input#name::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#mail::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#pass::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#re-pass::-webkit-input-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-registration form.registration .element input#name:-ms-input-placeholder, #client-account .client-registration form.registration .element input#mail:-ms-input-placeholder, #client-account .client-registration form.registration .element input#pass:-ms-input-placeholder, #client-account .client-registration form.registration .element input#re-pass:-ms-input-placeholder {
+  color: #b2b1b1;
+}
+#client-account .client-registration form.registration ul {
+  margin: 0;
+  padding: 0;
+}
+#client-account .client-registration form.registration ul li {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#client-account .client-registration form.registration ul li input[type="checkbox"] {
+  margin: 0 10px 0 0;
+}
+#client-account .client-registration form.registration ul li a:link {
+  color: #8b8b8b !important;
+  text-decoration: none;
+  font-size: 12px;
+}
+#client-account .client-registration form.registration ul li a:hover {
+  text-decoration: underline;
+}
+#client-account .client-registration form.registration button#register {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white !important;
+  background-color: #a0d468;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  height: 35px;
+  font-size: 16px;
+  font-variant: small-caps;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  line-height: 31px;
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+#client-account .client-registration form.registration button#register:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+
+.registration-sucess, .new-password-sucess {
+  float: left;
+}
+.registration-sucess p, .new-password-sucess p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  color: #a0d468;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.lost-password {
+  float: left;
+  margin: 15px 0 0 0;
+}
+.lost-password p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.lost-password form.recover-password {
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+.lost-password form.recover-password input#e-mail {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  float: left;
+  width: 348px;
+  height: 35px;
+  border: 1px solid #d7d8dd;
+  padding: 0 0 0 10px;
+  margin: 0 0 15px 0;
+  color: #8b8b8b;
+}
+.lost-password form.recover-password input#e-mail:focus {
+  outline: 0;
+}
+.lost-password form.recover-password input#e-mail::-moz-placeholder {
+  color: #b2b1b1;
+}
+.lost-password form.recover-password input#e-mail::-webkit-input-placeholder {
+  color: #b2b1b1;
+}
+.lost-password form.recover-password input#e-mail:-ms-input-placeholder {
+  color: #b2b1b1;
+}
+.lost-password form.recover-password button#send-password {
+  float: left;
+  width: 360px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white !important;
+  background-color: #a0d468;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  height: 35px;
+  font-size: 16px;
+  font-variant: small-caps;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  line-height: 31px;
+}
+.lost-password form.recover-password button#send-password:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+
+#landlord-account {
+  float: left;
+  margin: 15px 0 0 0;
+}
+#landlord-account p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#landlord-account form.login {
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+#landlord-account form.login input#landlord-email, #landlord-account form.login input#landlord-password {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  float: left;
+  width: 348px;
+  height: 35px;
+  border: 1px solid #d7d8dd;
+  padding: 0 0 0 10px;
+  margin: 0 0 15px 0;
+  color: #8b8b8b;
+}
+#landlord-account form.login input#landlord-email:focus, #landlord-account form.login input#landlord-password:focus {
+  outline: 0;
+}
+#landlord-account form.login input#landlord-email::-moz-placeholder, #landlord-account form.login input#landlord-password::-moz-placeholder {
+  color: #b2b1b1;
+}
+#landlord-account form.login input#landlord-email::-webkit-input-placeholder, #landlord-account form.login input#landlord-password::-webkit-input-placeholder {
+  color: #b2b1b1;
+}
+#landlord-account form.login input#landlord-email:-ms-input-placeholder, #landlord-account form.login input#landlord-password:-ms-input-placeholder {
+  color: #b2b1b1;
+}
+#landlord-account form.login ul {
+  float: left;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  font-size: 12px;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#landlord-account form.login ul li {
+  list-style-type: none;
+}
+#landlord-account form.login ul li:link {
+  color: #8b8b8b;
+}
+#landlord-account form.login ul li:hover {
+  text-decoration: underline;
+}
+#landlord-account form.login ul li:visited {
+  text-decoration: underline;
+}
+#landlord-account form.login button#btn-login {
+  float: right;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white !important;
+  background-color: #a0d468;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  height: 35px;
+  font-size: 16px;
+  font-variant: small-caps;
+  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+  line-height: 31px;
+}
+#landlord-account form.login button#btn-login:hover {
+  -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
