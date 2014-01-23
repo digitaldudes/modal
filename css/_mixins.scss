@@ -1,20 +1,6 @@
-$gray:rgb(139,139,139);
-$light-gray:rgb(178,177,177);
-$white:rgb(255,255,255);
-$blue:rgb(95,167,240);
-$landlord-bg:rgb(52,152,219);
-$green-bg:rgb(160,212,104);
-$facebook-blue:rgb(93,156,236);
-$client-bg:rgb(82,190,127);
-$input-border-color:rgb(215,216,221);
+/* defined mixins */
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
-          border-radius: $radius;
-}
+/* typography */
 @mixin open-sans-light {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -22,6 +8,27 @@ $input-border-color:rgb(215,216,221);
 @mixin open-sans-regular {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+}
+@mixin text-shadow($h, $v, $blur, $color) {
+	text-shadow: $h, $v, $blur, $color;
+}
+@mixin modal-p {
+	@include open-sans-light;
+	color:$gray;
+	font-size: 12px;
+	text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
+	text-align: left;
+	margin: 0;	
+	padding: 0
+}
+
+/* box styling */
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
 }
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
   @if $inset {
@@ -35,18 +42,7 @@ $input-border-color:rgb(215,216,221);
   }
 }
 
-@mixin text-shadow($h, $v, $blur, $color) {
-	text-shadow: $h, $v, $blur, $color;
-}
-@mixin placeholder {
-  &::-moz-placeholder { @content }
-  &::-webkit-input-placeholder { @content }
-  &:-ms-input-placeholder { @content }
-}
-@mixin placeholder-style {
-  color: $light-gray;
-}
-
+/* input styling */
 @mixin input {
 	@include border-radius(2px);
 	@include open-sans-light;
@@ -56,13 +52,23 @@ $input-border-color:rgb(215,216,221);
 	height: 35px;
 	border:1px solid $input-border-color;
 	padding:0 0 0 10px;
-	margin:0 0 15px 0;
+	margin:15px 0 0 0 !important;
 	color:$gray;
 	&:focus {
+		opacity:1;
 	    outline: 0;
 	}
 }
+@mixin placeholder {
+	&::-moz-placeholder { @content }
+	&::-webkit-input-placeholder { @content }
+	&:-ms-input-placeholder { @content }
+}
+@mixin placeholder-style {
+	color: $light-gray;
+}
 
+/* buttons styling */
 @mixin green-btn {
 	@include border-radius(2px);
 	@include open-sans-light;
@@ -83,14 +89,4 @@ $input-border-color:rgb(215,216,221);
 	    -moz-box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
 	    box-shadow: inset 10px 10px 134px -3px rgba(0,0,0,0.15);
 	}
-}
-
-@mixin modal-p {
-	@include open-sans-light;
-	color:$gray;
-	font-size: 12px;
-	text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
-	text-align: left;
-	margin: 0;
-	padding: 0
 }

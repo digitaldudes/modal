@@ -1,21 +1,42 @@
+/* defined colors */
+/* landlord box bg */
+/* client box bg */
+/* green button bg color */
+/* login with facebook button bg */
+/* facebook buttons style */
+/* alerts style - error */
+/* red font */
+/* error validation input bg */
+/* alerts style - success */
+/* green font */
+/* success validation input bg */
+/* defined mixins */
+/* typography */
+/* box styling */
+/* input styling */
+/* buttons styling */
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+/* line 15, main-css.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
+/* line 20, main-css.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
+/* line 25, main-css.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
+/* line 30, main-css.scss */
 hr {
   display: block;
   height: 1px;
@@ -25,20 +46,24 @@ hr {
   padding: 0;
 }
 
+/* line 39, main-css.scss */
 img {
   vertical-align: middle;
 }
 
+/* line 43, main-css.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/* line 49, main-css.scss */
 textarea {
   resize: vertical;
 }
 
+/* line 53, main-css.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -49,6 +74,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* line 65, main-css.scss */
 #login-modal {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -64,6 +90,7 @@ textarea {
   padding: 10px;
   background-color: #f6f6f6;
 }
+/* line 73, main-css.scss */
 #login-modal p.headline {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -75,6 +102,7 @@ textarea {
   padding: 0;
   font-size: 18px;
 }
+/* line 77, main-css.scss */
 #login-modal .user-type {
   float: left;
   width: 360px;
@@ -83,6 +111,7 @@ textarea {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+/* line 83, main-css.scss */
 #login-modal .user-type .landlord, #login-modal .user-type .client {
   -webkit-border-radius: 2px 0 0 2px;
   -moz-border-radius: 2px 0 0 2px;
@@ -94,11 +123,13 @@ textarea {
   width: 180px;
   height: 160px;
 }
+/* line 89, main-css.scss */
 #login-modal .user-type .landlord:hover, #login-modal .user-type .client:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
 }
+/* line 95, main-css.scss */
 #login-modal .user-type .client {
   -webkit-border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
@@ -108,12 +139,14 @@ textarea {
   background-color: #52be7f;
   float: right;
 }
+/* line 100, main-css.scss */
 #login-modal .user-type .icon {
   width: 180px;
   height: 90px;
   padding: 20px 0 0 0;
   text-align: center;
 }
+/* line 106, main-css.scss */
 #login-modal .user-type .account-type {
   color: white;
   width: 180px;
@@ -122,6 +155,7 @@ textarea {
   font-size: 20px;
   text-shadow: 1px 1.732px 3px rgba(0, 0, 0, 0.2);
 }
+/* line 114, main-css.scss */
 #login-modal .user-type p.info {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -134,44 +168,51 @@ textarea {
   padding: 15px 0 0 0;
   margin: 0;
 }
+/* line 126, main-css.scss */
 #login-modal #fb-login {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   float: left;
-  width: 280px;
-  padding: 0 40px;
+  width: 320px;
+  padding: 0 20px;
   margin: 15px 0 0 0;
 }
+/* line 132, main-css.scss */
 #login-modal #fb-login .fb-login {
   float: left;
 }
+/* line 135, main-css.scss */
 #login-modal #fb-login .fb-btn {
   color: white;
   display: inline;
   float: left;
-  width: 260px;
+  width: 300px;
   height: 50px;
   padding: 0 20px 0 0;
-  background: #5d9cec url("../img/  fb-login-icon.png") no-repeat left top;
+  background: #5d9cec url("../img/fb-login-icon.png") no-repeat left top;
   font-size: 18px;
   text-shadow: 1px 1.732px 1px rgba(0, 0, 0, 0.2);
   line-height: 50px;
   text-align: right;
 }
+/* line 147, main-css.scss */
 #login-modal #fb-login .fb-btn:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
 }
+/* line 152, main-css.scss */
 #login-modal #fb-login .fb-btn .small {
   display: inline;
   font-size: 10px;
 }
 
+/* line 159, main-css.scss */
 a:link {
   text-decoration: none;
 }
 
+/* line 162, main-css.scss */
 #client-account {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -179,9 +220,11 @@ a:link {
   width: 360px;
   margin: 15px 0 0 0;
 }
+/* line 167, main-css.scss */
 #client-account .client-login {
   float: left;
 }
+/* line 169, main-css.scss */
 #client-account .client-login .headline {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -192,11 +235,12 @@ a:link {
   margin: 0;
   padding: 0;
 }
+/* line 172, main-css.scss */
 #client-account .client-login form.login {
   float: left;
-  margin: 15px 0 0 0;
 }
-#client-account .client-login form.login input#email, #client-account .client-login form.login input#password {
+/* line 174, main-css.scss */
+#client-account .client-login form.login input.email, #client-account .client-login form.login input.password {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -210,22 +254,34 @@ a:link {
   height: 35px;
   border: 1px solid #d7d8dd;
   padding: 0 0 0 10px;
-  margin: 0 0 15px 0;
+  margin: 15px 0 0 0 !important;
   color: #8b8b8b;
 }
-#client-account .client-login form.login input#email:focus, #client-account .client-login form.login input#password:focus {
+/* line 57, _mixins.scss */
+#client-account .client-login form.login input.email:focus, #client-account .client-login form.login input.password:focus {
+  opacity: 1;
   outline: 0;
 }
-#client-account .client-login form.login input#email::-moz-placeholder, #client-account .client-login form.login input#password::-moz-placeholder {
+/* line 63, _mixins.scss */
+#client-account .client-login form.login input.email::-moz-placeholder, #client-account .client-login form.login input.password::-moz-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-login form.login input#email::-webkit-input-placeholder, #client-account .client-login form.login input#password::-webkit-input-placeholder {
+/* line 64, _mixins.scss */
+#client-account .client-login form.login input.email::-webkit-input-placeholder, #client-account .client-login form.login input.password::-webkit-input-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-login form.login input#email:-ms-input-placeholder, #client-account .client-login form.login input#password:-ms-input-placeholder {
+/* line 65, _mixins.scss */
+#client-account .client-login form.login input.email:-ms-input-placeholder, #client-account .client-login form.login input.password:-ms-input-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-login form.login ul {
+/* line 180, main-css.scss */
+#client-account .client-login form.login .option {
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+/* line 184, main-css.scss */
+#client-account .client-login form.login .option ul.form {
   color: #8b8b8b;
   float: left;
   height: 40px;
@@ -234,19 +290,23 @@ a:link {
   font-size: 12px;
   text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
 }
-#client-account .client-login form.login ul li {
+/* line 192, main-css.scss */
+#client-account .client-login form.login .option ul.form li {
   list-style-type: none;
   line-height: 20px;
   text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
   color: #8b8b8b;
 }
-#client-account .client-login form.login ul li:link {
+/* line 197, main-css.scss */
+#client-account .client-login form.login .option ul.form li:link {
   color: #8b8b8b;
 }
-#client-account .client-login form.login ul li:hover {
+/* line 200, main-css.scss */
+#client-account .client-login form.login .option ul.form li:hover {
   text-decoration: underline;
 }
-#client-account .client-login form.login #btn-login {
+/* line 205, main-css.scss */
+#client-account .client-login form.login .option #btn-login {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -269,15 +329,18 @@ a:link {
   float: right;
   width: 115px;
 }
-#client-account .client-login form.login #btn-login:hover {
+/* line 87, _mixins.scss */
+#client-account .client-login form.login .option #btn-login:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
 }
+/* line 213, main-css.scss */
 #client-account .client-registration {
   float: left;
   margin: 15px 0 0 0;
 }
+/* line 216, main-css.scss */
 #client-account .client-registration p.headline {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -288,15 +351,12 @@ a:link {
   margin: 0;
   padding: 0;
 }
+/* line 219, main-css.scss */
 #client-account .client-registration form.registration {
   float: left;
-  margin: 15px 0 0 0;
 }
-#client-account .client-registration form.registration .element {
-  float: left;
-  width: 360px;
-}
-#client-account .client-registration form.registration .element input#name, #client-account .client-registration form.registration .element input#mail, #client-account .client-registration form.registration .element input#pass, #client-account .client-registration form.registration .element input#re-pass {
+/* line 221, main-css.scss */
+#client-account .client-registration form.registration input.name, #client-account .client-registration form.registration input.mail, #client-account .client-registration form.registration input.pass, #client-account .client-registration form.registration input.re-pass {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -310,26 +370,35 @@ a:link {
   height: 35px;
   border: 1px solid #d7d8dd;
   padding: 0 0 0 10px;
-  margin: 0 0 15px 0;
+  margin: 15px 0 0 0 !important;
   color: #8b8b8b;
 }
-#client-account .client-registration form.registration .element input#name:focus, #client-account .client-registration form.registration .element input#mail:focus, #client-account .client-registration form.registration .element input#pass:focus, #client-account .client-registration form.registration .element input#re-pass:focus {
+/* line 57, _mixins.scss */
+#client-account .client-registration form.registration input.name:focus, #client-account .client-registration form.registration input.mail:focus, #client-account .client-registration form.registration input.pass:focus, #client-account .client-registration form.registration input.re-pass:focus {
+  opacity: 1;
   outline: 0;
 }
-#client-account .client-registration form.registration .element input#name::-moz-placeholder, #client-account .client-registration form.registration .element input#mail::-moz-placeholder, #client-account .client-registration form.registration .element input#pass::-moz-placeholder, #client-account .client-registration form.registration .element input#re-pass::-moz-placeholder {
+/* line 63, _mixins.scss */
+#client-account .client-registration form.registration input.name::-moz-placeholder, #client-account .client-registration form.registration input.mail::-moz-placeholder, #client-account .client-registration form.registration input.pass::-moz-placeholder, #client-account .client-registration form.registration input.re-pass::-moz-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-registration form.registration .element input#name::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#mail::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#pass::-webkit-input-placeholder, #client-account .client-registration form.registration .element input#re-pass::-webkit-input-placeholder {
+/* line 64, _mixins.scss */
+#client-account .client-registration form.registration input.name::-webkit-input-placeholder, #client-account .client-registration form.registration input.mail::-webkit-input-placeholder, #client-account .client-registration form.registration input.pass::-webkit-input-placeholder, #client-account .client-registration form.registration input.re-pass::-webkit-input-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-registration form.registration .element input#name:-ms-input-placeholder, #client-account .client-registration form.registration .element input#mail:-ms-input-placeholder, #client-account .client-registration form.registration .element input#pass:-ms-input-placeholder, #client-account .client-registration form.registration .element input#re-pass:-ms-input-placeholder {
+/* line 65, _mixins.scss */
+#client-account .client-registration form.registration input.name:-ms-input-placeholder, #client-account .client-registration form.registration input.mail:-ms-input-placeholder, #client-account .client-registration form.registration input.pass:-ms-input-placeholder, #client-account .client-registration form.registration input.re-pass:-ms-input-placeholder {
   color: #b2b1b1;
 }
-#client-account .client-registration form.registration ul {
-  margin: 0;
+/* line 227, main-css.scss */
+#client-account .client-registration form.registration ul.form {
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
   padding: 0;
 }
-#client-account .client-registration form.registration ul li {
+/* line 232, main-css.scss */
+#client-account .client-registration form.registration ul.form li {
   list-style-type: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -340,17 +409,21 @@ a:link {
   margin: 0;
   padding: 0;
 }
-#client-account .client-registration form.registration ul li input[type="checkbox"] {
+/* line 235, main-css.scss */
+#client-account .client-registration form.registration ul.form li input[type="checkbox"] {
   margin: 0 10px 0 0;
 }
-#client-account .client-registration form.registration ul li a:link {
+/* line 238, main-css.scss */
+#client-account .client-registration form.registration ul.form li a:link {
   color: #8b8b8b !important;
   text-decoration: none;
   font-size: 12px;
 }
-#client-account .client-registration form.registration ul li a:hover {
+/* line 243, main-css.scss */
+#client-account .client-registration form.registration ul.form li a:hover {
   text-decoration: underline;
 }
+/* line 248, main-css.scss */
 #client-account .client-registration form.registration button#register {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -375,35 +448,19 @@ a:link {
   width: 360px;
   margin: 15px 0 0 0;
 }
+/* line 87, _mixins.scss */
 #client-account .client-registration form.registration button#register:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
 }
 
-.registration-sucess, .new-password-sucess {
-  float: left;
-}
-.registration-sucess p, .new-password-sucess p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #8b8b8b;
-  font-size: 12px;
-  text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  color: #a0d468;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  margin: 15px 0 0 0;
-}
-
+/* line 257, main-css.scss */
 .lost-password {
   float: left;
   margin: 15px 0 0 0;
 }
+/* line 260, main-css.scss */
 .lost-password p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -414,12 +471,13 @@ a:link {
   margin: 0;
   padding: 0;
 }
+/* line 263, main-css.scss */
 .lost-password form.recover-password {
   float: left;
   width: 360px;
-  margin: 15px 0 0 0;
 }
-.lost-password form.recover-password input#e-mail {
+/* line 266, main-css.scss */
+.lost-password form.recover-password input.e-mail {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -433,24 +491,31 @@ a:link {
   height: 35px;
   border: 1px solid #d7d8dd;
   padding: 0 0 0 10px;
-  margin: 0 0 15px 0;
+  margin: 15px 0 0 0 !important;
   color: #8b8b8b;
 }
-.lost-password form.recover-password input#e-mail:focus {
+/* line 57, _mixins.scss */
+.lost-password form.recover-password input.e-mail:focus {
+  opacity: 1;
   outline: 0;
 }
-.lost-password form.recover-password input#e-mail::-moz-placeholder {
+/* line 63, _mixins.scss */
+.lost-password form.recover-password input.e-mail::-moz-placeholder {
   color: #b2b1b1;
 }
-.lost-password form.recover-password input#e-mail::-webkit-input-placeholder {
+/* line 64, _mixins.scss */
+.lost-password form.recover-password input.e-mail::-webkit-input-placeholder {
   color: #b2b1b1;
 }
-.lost-password form.recover-password input#e-mail:-ms-input-placeholder {
+/* line 65, _mixins.scss */
+.lost-password form.recover-password input.e-mail:-ms-input-placeholder {
   color: #b2b1b1;
 }
+/* line 272, main-css.scss */
 .lost-password form.recover-password button#send-password {
   float: left;
   width: 360px;
+  margin: 15px 0 0 0;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -471,16 +536,19 @@ a:link {
   text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
   line-height: 31px;
 }
+/* line 87, _mixins.scss */
 .lost-password form.recover-password button#send-password:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
 }
 
+/* line 280, main-css.scss */
 #landlord-account {
   float: left;
   margin: 15px 0 0 0;
 }
+/* line 283, main-css.scss */
 #landlord-account p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -491,12 +559,13 @@ a:link {
   margin: 0;
   padding: 0;
 }
+/* line 286, main-css.scss */
 #landlord-account form.login {
   float: left;
   width: 360px;
-  margin: 15px 0 0 0;
 }
-#landlord-account form.login input#landlord-email, #landlord-account form.login input#landlord-password {
+/* line 289, main-css.scss */
+#landlord-account form.login input.landlord-email, #landlord-account form.login input.landlord-password {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -510,22 +579,34 @@ a:link {
   height: 35px;
   border: 1px solid #d7d8dd;
   padding: 0 0 0 10px;
-  margin: 0 0 15px 0;
+  margin: 15px 0 0 0 !important;
   color: #8b8b8b;
 }
-#landlord-account form.login input#landlord-email:focus, #landlord-account form.login input#landlord-password:focus {
+/* line 57, _mixins.scss */
+#landlord-account form.login input.landlord-email:focus, #landlord-account form.login input.landlord-password:focus {
+  opacity: 1;
   outline: 0;
 }
-#landlord-account form.login input#landlord-email::-moz-placeholder, #landlord-account form.login input#landlord-password::-moz-placeholder {
+/* line 63, _mixins.scss */
+#landlord-account form.login input.landlord-email::-moz-placeholder, #landlord-account form.login input.landlord-password::-moz-placeholder {
   color: #b2b1b1;
 }
-#landlord-account form.login input#landlord-email::-webkit-input-placeholder, #landlord-account form.login input#landlord-password::-webkit-input-placeholder {
+/* line 64, _mixins.scss */
+#landlord-account form.login input.landlord-email::-webkit-input-placeholder, #landlord-account form.login input.landlord-password::-webkit-input-placeholder {
   color: #b2b1b1;
 }
-#landlord-account form.login input#landlord-email:-ms-input-placeholder, #landlord-account form.login input#landlord-password:-ms-input-placeholder {
+/* line 65, _mixins.scss */
+#landlord-account form.login input.landlord-email:-ms-input-placeholder, #landlord-account form.login input.landlord-password:-ms-input-placeholder {
   color: #b2b1b1;
 }
-#landlord-account form.login ul {
+/* line 295, main-css.scss */
+#landlord-account form.login .option {
+  float: left;
+  width: 360px;
+  margin: 15px 0 0 0;
+}
+/* line 299, main-css.scss */
+#landlord-account form.login .option ul.form {
   float: left;
   height: 40px;
   font-family: 'Open Sans', sans-serif;
@@ -537,18 +618,23 @@ a:link {
   margin: 0;
   padding: 0;
 }
-#landlord-account form.login ul li {
+/* line 303, main-css.scss */
+#landlord-account form.login .option ul.form li {
   list-style-type: none;
 }
-#landlord-account form.login ul li:link {
+/* line 305, main-css.scss */
+#landlord-account form.login .option ul.form li:link {
   color: #8b8b8b;
 }
-#landlord-account form.login ul li:hover {
+/* line 308, main-css.scss */
+#landlord-account form.login .option ul.form li:hover {
   text-decoration: underline;
 }
-#landlord-account form.login ul li:visited {
+/* line 311, main-css.scss */
+#landlord-account form.login .option ul.form li:visited {
   text-decoration: underline;
 }
+/* line 317, main-css.scss */
 #landlord-account form.login button#btn-login {
   float: right;
   -webkit-border-radius: 2px;
@@ -571,143 +657,9 @@ a:link {
   text-shadow: 1.5px 2.598px 4px rgba(255, 255, 255, 0.3);
   line-height: 31px;
 }
+/* line 87, _mixins.scss */
 #landlord-account form.login button#btn-login:hover {
   -webkit-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
   box-shadow: inset 10px 10px 134px -3px rgba(0, 0, 0, 0.15);
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
 }
